@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=775ab3494a5b5001646084d974e20fed"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>맛집 지도</title>
+</head>
+<body>
+    <div id="root">
+        <h2><b>맛집 지도</b></h2>
+        <div id="subtitle"></div>
+        <div id="A">
+            <div id="recommend_area">
+                <div id="title_area">
+                    <span class="h4" id="title"><b>식당 추천</b></span>
+                    <button type="button" class="btn btn-outline-success btn-sm" id="refresh_button">&#8635</button>
+                    <div class="text-secondary" id="ex">별점 3.7점 이상 500m 이내의 식당을 랜덤으로 추천해드려요</div>
+                    <hr class="text-dark">
+                </div>
+                <div id="list"></div>
+            </div>
+            <div id="search_area">
+                <div id="title_area">
+                    <span class="h4" id="title"><b>키워드 검색</b></span>
+                    <div class="text-secondary" id="ex">선택한 키워드만 포함하는 추천과 리스트를 보여드려요 (중복 선택 가능)</div>
+                    <hr class="text-dark">
+                </div>
+                <div id="keyword"></div>
+                <button type="button" class="btn btn-success btn-sm" id="search_button">검색</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/AScreen.js"></script>
+</body>
+</html>

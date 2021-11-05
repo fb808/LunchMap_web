@@ -1,0 +1,397 @@
+body {
+  background-color: white;
+}
+
+#B {
+  position: absolute;
+  width: 84%;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hr {
+  width: 100%;
+  opacity: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#back_area {
+  margin-top: 2.2%;
+  margin-left: 3%;
+}
+
+#back_button {
+  border: none;
+  background-color: white;
+  width: 2.5%;
+  height: 2.5%;
+  margin-top: -1%;
+  margin-right: -1%;
+  transform: rotate(180deg);
+}
+
+#title_area {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+#keyword_area {
+  margin-top: 1rem;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+#recommend_area,
+#list_area {
+  width: 100%;
+}
+
+#left_screen {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 42%;
+}
+
+#map {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  margin-top: 1rem;
+  width: 54%;
+  height: 98%;
+}
+
+/* ------------------------------------------- */
+
+#no_keyword {
+  margin-right: 2%;
+  padding-top: 0.5%;
+  float: bottom;
+}
+
+#no_keyword_area{
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
+  width: 36vw;
+  height: 5vh;
+}
+
+#keyword_word_area {
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
+  width: 36vw;
+  height: 10vh;
+}
+
+.keyword_span {
+  display: inline-flex;
+}
+
+#keyword_word_area > .btn-outline-dark {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  border: hidden;
+  background-color: #e9e9e9;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  min-height: 30px;
+  height: 4vh;
+}
+
+#keyword_word_area > .btn-outline-dark:hover {
+  background-color: #e9e9e9;
+  color: black;
+}
+
+#keyword_word_area > .btn-outline-success {
+  display: inline-block;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  min-height: 30px;
+  height: 4vh;
+}
+
+.keyword-text {
+  margin: 0.3%;
+}
+
+.keyword-button {
+  width: 2%;
+  margin: 0.3%;
+  color: #888;
+  background-color: #e9e9e9;
+  border: none;
+}
+
+.keyword-button:hover {
+  color: #000;
+}
+
+/* ------------------------------------------- */
+
+#refresh_button {
+  float: right;
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+  width: 6.5%;
+  margin-top: -1.2%;
+  border-radius: 2rem;
+  border: white;
+  transform: rotate(90deg);
+}
+
+#select_box {
+  float: right;
+  margin-right: 2.5%;
+}
+
+#label {
+  display: inline-block;
+  padding: 16%;
+}
+
+#optionList {
+  min-width: max-content;
+}
+
+#no_recommend_message {
+  padding: 3%;
+  font-size: 1.1rem;
+}
+
+#list_list.no_keyword {
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 54vh;
+}
+
+#list_list.no_recommend {
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 61vh;
+}
+
+#list_list.list {
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 50vh;
+}
+
+#recommend_area > #list {
+  width: 100%;
+  margin-top: 0.5%;
+}
+
+#list_item {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  transition: background-color 0.1s ease-out 1ms;
+}
+
+#list_item:hover {
+  background-color: #1987541c;
+}
+
+#list_list > hr {
+  margin: 0%;
+}
+
+#list_list > hr:last-child {
+  display: none;
+}
+
+#list > hr:last-child {
+  display: none;
+}
+
+#list_list > button {
+  margin-top: 2%;
+}
+
+#list > button {
+  margin-top: 2%;
+}
+
+#list_item_area {
+  margin-bottom: 1.5%;
+}
+
+.item-title {
+  font-size: 1.1rem;
+  margin-right: 2%;
+}
+
+.item-rate {
+  padding: 2%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#shortcut_button {
+  float: right;
+  border: none;
+  background-color: white;
+  width: 7%;
+  height: 7%;
+  margin-top: -1%;
+}
+
+.item-address {
+  display: inline-block;
+  margin-top: 0.5%;
+  font-size: 1.05rem;
+}
+
+#cate_area {
+  width: 39%;
+  text-align: right;
+  margin-left: 5%;
+}
+
+#cate_area > span {
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  background-color: #e9e9e9;
+  margin-right: 1%;
+}
+
+.item-distance {
+  float: right;
+  font-size: 1.1rem;
+}
+
+/* ------------------------------------------- */
+
+#title_area.modal-header {
+  margin-bottom: 0%;
+}
+
+#modal_body {
+  padding-top: 0%;
+}
+
+#modal_body #button_area {
+  margin-top: 4%;
+}
+
+#modal_close {
+  margin-right: 1%;
+  padding: 0%;
+}
+
+.modal-title {
+  margin-left: 1%;
+}
+
+#button_area {
+  background-color: white;
+}
+
+#no_keyword_message {
+  padding: 3%;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+#button_area > .tag-button {
+  width: calc(100% / 4 - 2%);
+  height: 8vh;
+  min-height: 40px;
+  margin: 1%;
+  transition: background-color 0.1s ease-out 1ms;
+}
+
+#button_area > .tag-button:hover {
+  background-color: #19875423;
+  color: #198754;
+}
+
+#button_area > .tag-button-on {
+  width: calc(100% / 4 - 2%);
+  height: 8vh;
+  min-height: 40px;
+  margin: 1%;
+  background-color: #198754;
+  color: white;
+  transition: background-color 0.1s ease-out 1ms;
+}
+
+#button_area > .tag-button-on:hover {
+  background-color: #156e44;
+}
+
+#ok_button {
+  width: 100%;
+  height: 6vh;
+  min-height: 40px;
+  margin: 1%;
+  margin-top: 4%;
+}
+
+/* ------------------------------------------- */
+
+.customoverlay {
+  position: relative;
+  bottom: 75px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #ddd;
+  float: left;
+}
+
+.customoverlay:nth-of-type(n) {
+  border: 0;
+  box-shadow: 0px 1px 2px #888;
+}
+
+.customoverlay a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  background: #198754;
+  background: #198754
+    url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png")
+    no-repeat right 14px center;
+}
+
+.customoverlay .title {
+  display: block;
+  text-align: center;
+  background: #fff;
+  margin-right: 35px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.customoverlay:after {
+  content: "";
+  position: absolute;
+  margin-left: -12px;
+  left: 50%;
+  bottom: -12px;
+  width: 22px;
+  height: 12px;
+  background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png");
+}
