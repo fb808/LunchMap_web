@@ -32,7 +32,7 @@ function recommendList(set) {
 }
 
 function handleRefresh() {
-    let requestURL = 'http://localhost:8000/data.json';
+    let requestURL = 'https://fb808.github.io/LunchMap_web/data.json';
     $.getJSON(requestURL, setInfo);
 }
 
