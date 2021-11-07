@@ -1,4 +1,5 @@
-# LunchMap_web
-LunchMap repository hosting
+# 맛집 지도
 
-<b>맛집지도</b>
+#### LunchMap_web
+LunchMap repository hosting  
+식스트헤르츠 현장실습 결과물
